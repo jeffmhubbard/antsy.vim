@@ -1,10 +1,14 @@
-" autoload/antsy.vim
+" Name: autoload/antsy.vim
+" Maintainer: https://github.com/jeffmhubbard/antsy.vim.git
+" License: The MIT License (MIT)
+" Source: https://github.com/joshdick/onedark.vim.git
+" Modified: May 30, 2018
 
-let s:overrides = get(g:, "theme_color_overrides", {})
+let s:overrides = get(g:, "antsy_color_overrides", {})
 
 let s:colors = {
-      \ "dark_grey": get(s:overrides, "dark_grey", { "gui": "#000000", "cterm": "0", "cterm16": "0" }),
-      \ "grey": get(s:overrides, "grey", { "gui": "#7f7f7f", "cterm": "8", "cterm16": "8" }),
+      \ "black": get(s:overrides, "black", { "gui": "#000000", "cterm": "0", "cterm16": "0" }),
+      \ "dark_grey": get(s:overrides, "dark_grey", { "gui": "#7f7f7f", "cterm": "8", "cterm16": "8" }),
       \ "dark_red": get(s:overrides, "dark_red", { "gui": "#cd0000", "cterm": "1", "cterm16": "1" }),
       \ "red": get(s:overrides, "red", { "gui": "#ff0000", "cterm": "9", "cterm16": "9" }),
       \ "dark_green": get(s:overrides, "dark_green", { "gui": "#00cd00", "cterm": "2", "cterm16": "2" }),
@@ -13,11 +17,11 @@ let s:colors = {
       \ "yellow": get(s:overrides, "yellow", { "gui": "#ffff00", "cterm": "11", "cterm16": "11" }),
       \ "dark_blue": get(s:overrides, "dark_blue", { "gui": "#0000ee", "cterm": "4", "cterm16": "4" }),
       \ "blue": get(s:overrides, "blue", { "gui": "#5c5cff", "cterm": "12", "cterm16": "12" }),
-      \ "dark_purple": get(s:overrides, "dark_purple", { "gui": "#cd00cd", "cterm": "5", "cterm16": "5" }),
-      \ "purple": get(s:overrides, "purple", { "gui": "#ff00ff", "cterm": "13", "cterm16": "13" }),
+      \ "dark_magenta": get(s:overrides, "dark_magenta", { "gui": "#cd00cd", "cterm": "5", "cterm16": "5" }),
+      \ "magenta": get(s:overrides, "magenta", { "gui": "#ff00ff", "cterm": "13", "cterm16": "13" }),
       \ "dark_cyan": get(s:overrides, "dark_cyan", { "gui": "#00cdcd", "cterm": "6", "cterm16": "6" }),
       \ "cyan": get(s:overrides, "cyan", { "gui": "#00ffff", "cterm": "14", "cterm16": "14" }),
-      \ "dark_white": get(s:overrides, "dark_white", { "gui": "#e5e5e5", "cterm": "7", "cterm16": "7" }),
+      \ "grey": get(s:overrides, "grey", { "gui": "#e5e5e5", "cterm": "7", "cterm16": "7" }),
       \ "white": get(s:overrides, "white", { "gui": "#ffffff", "cterm": "15", "cterm16": "15" }),
       \ "visual_black": get(s:overrides, "visual_black", { "gui": "NONE", "cterm": "NONE", "cterm16": "0" }),
       \ "comment_grey": get(s:overrides, "comment_grey", { "gui": "#7f7f7f", "cterm": "8", "cterm16": "8" }),
@@ -33,3 +37,5 @@ let s:colors = {
 function! antsy#GetColors()
   return s:colors
 endfunction
+
+" vim:fdm=marker
