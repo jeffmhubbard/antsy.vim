@@ -57,9 +57,9 @@ let s:p.visual.left     = [ [ s:black, s:visual_color ], [ s:white, s:active_bg,
 let s:p.visual.right    = [ [ s:white, s:active_bg, s:bold ], [ s:cyan, s:active_bg, s:bold ] ]
 let s:p.visual.middle   = [ [ s:magenta, s:active_bg, s:bold ] ]
 
-let s:p.inactive.left   = [ [ s:dark_grey, s:inactive_bg, s:bold ], [ s:dark_grey, s:inactive_bg, s:bold ] ]
-let s:p.inactive.right  = [ [ s:grey, s:inactive_bg ], [ s:dark_grey, s:inactive_bg ] ]
-let s:p.inactive.middle = [ [ s:dark_grey, s:inactive_bg ] ]
+let s:p.inactive.left   = [ [ s:dark_grey, s:inactive_bg ] ]
+let s:p.inactive.right  = [ [ s:dark_grey, s:inactive_bg ], [ s:dark_cyan, s:inactive_bg ] ]
+let s:p.inactive.middle = [ [ s:dark_magenta, s:inactive_bg ] ]
 
 let s:p.normal.error    = [ [ s:black, s:red ] ]
 let s:p.normal.warning  = [ [ s:black, s:yellow ] ]
