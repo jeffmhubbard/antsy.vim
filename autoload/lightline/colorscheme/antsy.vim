@@ -33,9 +33,9 @@ let s:vertsplit     = s:dark_grey
 
 let s:tab_color     = s:blue
 let s:normal_color  = s:dark_grey
-let s:insert_color  = s:cyan
+let s:insert_color  = s:white
 let s:replace_color = s:yellow
-let s:visual_color  = s:magenta
+let s:visual_color  = s:cyan
 let s:active_bg     = s:black
 let s:inactive_bg   = s:black
 
@@ -66,4 +66,4 @@ let s:p.normal.warning  = [ [ s:black, s:yellow ] ]
 
 let g:lightline#colorscheme#antsy#palette = lightline#colorscheme#flatten(s:p)
 
-" vim:fdm=marker
+" vim: set ft=vim:

@@ -28,7 +28,7 @@ let s:colors = {
       \ "gutter_fg_grey": get(s:overrides, "gutter_fg_grey", { "gui": "#7f7f7f", "cterm": "8", "cterm16": "8" }),
       \ "cursor_grey": get(s:overrides, "cursor_grey", { "gui": "#f7f7f7", "cterm": "8", "cterm16": "8" }),
       \ "cursor_line_grey": get(s:overrides, "cursor_line_grey", { "gui": "NONE", "cterm": "NONE", "cterm16": "NONE" }),
-      \ "visual_grey": get(s:overrides, "visual_grey", { "gui": "#7f7f7f", "cterm": "8", "cterm16": "8" }),
+      \ "visual_grey": get(s:overrides, "visual_grey", { "gui": "#e5e5e5", "cterm": "7", "cterm16": "7" }),
       \ "menu_grey": get(s:overrides, "menu_grey", { "gui": "#7f7f7f", "cterm": "8", "cterm16": "8" }),
       \ "special_grey": get(s:overrides, "special_grey", { "gui": "#7f7f7f", "cterm": "8", "cterm16": "8" }),
       \ "vertsplit": get(s:overrides, "vertsplit", { "gui": "#7f7f7f", "cterm": "8", "cterm16": "8" }),
@@ -38,4 +38,4 @@ function! antsy#GetColors()
   return s:colors
 endfunction
 
-" vim:fdm=marker
+" vim: set ft=vim:

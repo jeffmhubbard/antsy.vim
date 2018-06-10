@@ -151,10 +151,10 @@ else
   call s:h("CursorLine", { "bg": s:cursor_line_grey, "cterm": "bold" }) " the screen line that the cursor is in when 'cursorline' is set
 endif
 call s:h("Directory", { "fg": s:blue }) " directory names (and other special names in listings)
-call s:h("DiffAdd", { "bg": s:green, "fg": s:dark_grey }) " diff mode: Added line
-call s:h("DiffChange", { "bg": s:yellow, "fg": s:dark_grey }) " diff mode: Changed line
-call s:h("DiffDelete", { "bg": s:red, "fg": s:dark_grey }) " diff mode: Deleted line
-call s:h("DiffText", { "bg": s:dark_grey, "fg": s:yellow }) " diff mode: Changed text within a changed line
+call s:h("DiffAdd", { "bg": s:green, "fg": s:black }) " diff mode: Added line
+call s:h("DiffChange", { "bg": s:yellow, "fg": s:black }) " diff mode: Changed line
+call s:h("DiffDelete", { "bg": s:red, "fg": s:black }) " diff mode: Deleted line
+call s:h("DiffText", { "bg": s:dark_grey, "fg": s:black }) " diff mode: Changed text within a changed line
 call s:h("ErrorMsg", { "fg": s:red }) " error messages on the command line
 call s:h("VertSplit", { "fg": s:vertsplit,  }) " the column separating vertically split windows
 call s:h("Folded", { "fg": s:comment_grey }) " line used for closed folds
@@ -173,8 +173,8 @@ call s:h("PmenuSel", { "fg": s:black, "bg": s:dark_grey }) " Popup menu: selecte
 call s:h("PmenuSbar", { "bg": s:special_grey }) " Popup menu: scrollbar.
 call s:h("PmenuThumb", { "bg": s:white }) " Popup menu: Thumb of the scrollbar.
 call s:h("Question", { "fg": s:magenta }) " hit-enter prompt and yes/no questions
-call s:h("Search", { "fg": s:dark_grey, "bg": s:yellow }) " Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
-call s:h("QuickFixLine", { "fg": s:dark_grey, "bg": s:yellow }) " Current quickfix item in the quickfix window.
+call s:h("Search", { "fg": s:black, "bg": s:yellow }) " Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
+call s:h("QuickFixLine", { "fg": s:black, "bg": s:yellow }) " Current quickfix item in the quickfix window.
 call s:h("SpecialKey", { "fg": s:special_grey }) " Meta and special keys listed with ":map", also for text used to show unprintable characters in the text, 'listchars'. Generally: text that is displayed differently from what it really is.
 call s:h("SpellBad", { "fg": s:red, "gui": "underline", "cterm": "underline" }) " Word that is not recognized by the spellchecker. This will be combined with the highlighting used otherwise.
 call s:h("SpellCap", { "fg": s:dark_yellow }) " Word that should start with a capital. This will be combined with the highlighting used otherwise.
@@ -499,4 +499,4 @@ hi link gitcommitUnmergedArrow gitcommitUnmergedFile
 " https://groups.google.com/forum/#!msg/vim_dev/afPqwAFNdrU/nqh6tOM87QUJ
 set background=dark
 
-" vim:fdm=marker
+" vim: set ft=vim:
