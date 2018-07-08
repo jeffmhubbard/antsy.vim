@@ -71,7 +71,7 @@ endfunction
 let s:colors = antsy#GetColors()
 
 let s:black = s:colors.black
-let s:dark_grey = s:colors.grey
+let s:dark_grey = s:colors.dark_grey
 let s:dark_red = s:colors.dark_red
 let s:red = s:colors.red
 let s:dark_green = s:colors.dark_green
