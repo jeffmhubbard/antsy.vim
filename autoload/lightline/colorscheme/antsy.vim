@@ -1,8 +1,4 @@
-" Name: autoload/lightline/colorscheme/antsy.vim
-" Maintainer: https://github.com/jeffmhubbard/antsy.vim.git
-" License: The MIT License (MIT)
-" Source: https://github.com/NovaDev94/lightline-onedark.git
-" Modified: May 30, 2018
+" autoload/lightline/colorscheme/antsy.vim
 
 let s:bold = get(g:, 'lightline#antsy#disable_bold_style', 0) ? '' : 'bold'
 
