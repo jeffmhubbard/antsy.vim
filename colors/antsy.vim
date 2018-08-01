@@ -168,10 +168,10 @@ call s:h("ModeMsg", { "bg": s:black, "fg": s:cyan }) " 'showmode' message (e.g.,
 call s:h("MoreMsg",{  "bg": s:black, "fg": s:cyan }) " more-prompt
 call s:h("NonText", { "fg": s:special_grey }) " '~' and '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line).
 call s:h("Normal", { "fg": s:white }) " normal text
-call s:h("Pmenu", { "bg": s:menu_grey }) " Popup menu: normal item.
-call s:h("PmenuSel", { "fg": s:black, "bg": s:dark_grey }) " Popup menu: selected item.
-call s:h("PmenuSbar", { "bg": s:special_grey }) " Popup menu: scrollbar.
-call s:h("PmenuThumb", { "bg": s:white }) " Popup menu: Thumb of the scrollbar.
+call s:h("Pmenu", { "fg": s:grey, "bg": s:black }) " Popup menu: normal item.
+call s:h("PmenuSel", { "fg": s:black, "bg": s:blue }) " Popup menu: selected item.
+call s:h("PmenuSbar", { "bg": s:black }) " Popup menu: scrollbar.
+call s:h("PmenuThumb", { "bg": s:menu_grey }) " Popup menu: Thumb of the scrollbar.
 call s:h("Question", { "fg": s:magenta }) " hit-enter prompt and yes/no questions
 call s:h("Search", { "fg": s:black, "bg": s:yellow }) " Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
 call s:h("QuickFixLine", { "fg": s:black, "bg": s:yellow }) " Current quickfix item in the quickfix window.
