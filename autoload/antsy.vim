@@ -1,8 +1,4 @@
-" Name: autoload/antsy.vim
-" Maintainer: https://github.com/jeffmhubbard/antsy.vim.git
-" License: The MIT License (MIT)
-" Source: https://github.com/joshdick/onedark.vim.git
-" Modified: May 30, 2018
+" autoload/antsy.vim
 
 let s:overrides = get(g:, "antsy_color_overrides", {})
 

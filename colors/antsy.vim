@@ -1,8 +1,4 @@
-" Name: colors/antsy.vim
-" Maintainer: https://github.com/jeffmhubbard/dotfiles/
-" License: The MIT License (MIT)
-" Source: https://github.com/joshdick/onedark.vim.git
-" Modified: May 30, 2018
+" colors/antsy.vim
 
 " Initialization {{{
 
