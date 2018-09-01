@@ -3,20 +3,20 @@
 let s:bold = get(g:, 'lightline#antsy#disable_bold_style', 0) ? '' : 'bold'
 
 let s:black         = [ '#000000', 0 ]
-let s:dark_grey     = [ '#7f7f7f', 8 ]
 let s:dark_red      = [ '#cd0000', 1 ]
-let s:red           = [ '#ff0000', 9 ]
 let s:dark_green    = [ '#00cd00', 2 ]
-let s:green         = [ '#00ff00', 10 ]
 let s:dark_yellow   = [ '#cdcd00', 3 ]
-let s:yellow        = [ '#ffff00', 11 ]
 let s:dark_blue     = [ '#0000ee', 4 ]
-let s:blue          = [ '#5c5cff', 12 ]
 let s:dark_magenta  = [ '#cd00cd', 5 ]
-let s:magenta       = [ '#ff00ff', 13 ]
 let s:dark_cyan     = [ '#00cdcd', 6 ]
-let s:cyan          = [ '#00ffff', 14 ]
 let s:grey          = [ '#e5e5e5', 7 ]
+let s:dark_grey     = [ '#7f7f7f', 8 ]
+let s:red           = [ '#ff0000', 9 ]
+let s:green         = [ '#00ff00', 10 ]
+let s:yellow        = [ '#ffff00', 11 ]
+let s:blue          = [ '#5c5cff', 12 ]
+let s:magenta       = [ '#ff00ff', 13 ]
+let s:cyan          = [ '#00ffff', 14 ]
 let s:white         = [ '#ffffff', 15 ]
 
 let s:comment_grey  = s:dark_grey

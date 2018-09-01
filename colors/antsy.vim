@@ -415,19 +415,24 @@ call s:h("xmlEndTag", { "fg": s:red })
 call s:h("xmlTag", { "fg": s:red })
 call s:h("xmlTagName", { "fg": s:red })
 
+call s:h("dosiniNumber", { "fg": s:green })
+call s:h("dosiniLabel", { "fg": s:blue })
+call s:h("dosiniHeader", { "fg": s:magenta })
+call s:h("dosiniComment", { "fg": s:comment_grey })
+
 " }}}
 
 " Plugin Highlighting {{{
 
 " airblade/vim-gitgutter
-"hi link GitGutterAdd    SignifySignAdd
-"hi link GitGutterChange SignifySignChange
-"hi link GitGutterDelete SignifySignDelete
+hi link GitGutterAdd    SignifySignAdd
+hi link GitGutterChange SignifySignChange
+hi link GitGutterDelete SignifySignDelete
 
 " mhinz/vim-signify
-"call s:h("SignifySignAdd", { "fg": s:green })
-"call s:h("SignifySignChange", { "fg": s:yellow })
-"call s:h("SignifySignDelete", { "fg": s:red })
+call s:h("SignifySignAdd", { "fg": s:green })
+call s:h("SignifySignChange", { "fg": s:yellow })
+call s:h("SignifySignDelete", { "fg": s:red })
 
 " neomake/neomake
 "call s:h("NeomakeWarningSign", { "fg": s:yellow })
@@ -435,8 +440,8 @@ call s:h("xmlTagName", { "fg": s:red })
 "call s:h("NeomakeInfoSign", { "fg": s:blue })
 
 " tpope/vim-fugitive
-"call s:h("diffAdded", { "fg": s:green })
-"call s:h("diffRemoved", { "fg": s:red })
+call s:h("diffAdded", { "fg": s:green })
+call s:h("diffRemoved", { "fg": s:red })
 
 " }}}
 
