@@ -415,6 +415,7 @@ call s:h("xmlEndTag", { "fg": s:red })
 call s:h("xmlTag", { "fg": s:red })
 call s:h("xmlTagName", { "fg": s:red })
 
+" INI
 call s:h("dosiniNumber", { "fg": s:green })
 call s:h("dosiniLabel", { "fg": s:blue })
 call s:h("dosiniHeader", { "fg": s:magenta })
