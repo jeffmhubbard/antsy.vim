@@ -38,23 +38,23 @@ let s:inactive_bg   = s:black
 let s:p = {'normal': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'inactive': {}, 'tabline': {}}
 
 let s:p.normal.left     = [ [ s:black, s:tab_color ], [ s:white, s:active_bg, s:bold ] ]
-let s:p.normal.right    = [ [ s:white, s:active_bg, s:bold ], [ s:cyan, s:active_bg, s:bold ] ]
+let s:p.normal.right    = [ [ s:white, s:active_bg, s:bold ], [ s:cyan, s:active_bg, s:bold ], [ s:red, s:active_bg, s:bold ] ]
 let s:p.normal.middle   = [ [ s:magenta, s:active_bg, s:bold ] ]
 
 let s:p.insert.left     = [ [ s:black, s:insert_color ], [ s:white, s:active_bg, s:bold ] ]
-let s:p.insert.right    = [ [ s:white, s:active_bg, s:bold ], [ s:cyan, s:active_bg, s:bold ] ]
+let s:p.insert.right    = [ [ s:white, s:active_bg, s:bold ], [ s:cyan, s:active_bg, s:bold ], [ s:red, s:active_bg, s:bold ] ]
 let s:p.insert.middle   = [ [ s:magenta, s:active_bg, s:bold ] ]
 
 let s:p.replace.left    = [ [ s:black, s:replace_color ], [ s:white, s:active_bg, s:bold ] ]
-let s:p.replace.right   = [ [ s:white, s:active_bg, s:bold ], [ s:cyan, s:active_bg, s:bold ] ]
+let s:p.replace.right   = [ [ s:white, s:active_bg, s:bold ], [ s:cyan, s:active_bg, s:bold ], [ s:red, s:active_bg, s:bold ] ]
 let s:p.replace.middle  = [ [ s:magenta, s:active_bg, s:bold ] ]
 
 let s:p.visual.left     = [ [ s:black, s:visual_color ], [ s:white, s:active_bg, s:bold ] ]
-let s:p.visual.right    = [ [ s:white, s:active_bg, s:bold ], [ s:cyan, s:active_bg, s:bold ] ]
+let s:p.visual.right    = [ [ s:white, s:active_bg, s:bold ], [ s:cyan, s:active_bg, s:bold ], [ s:red, s:active_bg, s:bold ] ]
 let s:p.visual.middle   = [ [ s:magenta, s:active_bg, s:bold ] ]
 
 let s:p.inactive.left   = [ [ s:dark_grey, s:inactive_bg ] ]
-let s:p.inactive.right  = [ [ s:dark_grey, s:inactive_bg ], [ s:dark_cyan, s:inactive_bg ] ]
+let s:p.inactive.right  = [ [ s:dark_grey, s:inactive_bg ], [ s:dark_cyan, s:inactive_bg ], [ s:dark_red, s:active_bg, s:bold ] ]
 let s:p.inactive.middle = [ [ s:dark_magenta, s:inactive_bg ] ]
 
 let s:p.normal.error    = [ [ s:black, s:red ] ]
