@@ -18,6 +18,7 @@ let s:blue          = [ '#5c5cff', 12 ]
 let s:magenta       = [ '#ff00ff', 13 ]
 let s:cyan          = [ '#00ffff', 14 ]
 let s:white         = [ '#ffffff', 15 ]
+let s:blank         = [ 'NONE', 'NONE' ]
 
 let s:comment_grey  = s:dark_grey
 let s:gutter_grey   = s:dark_grey
@@ -32,14 +33,14 @@ let s:normal_color  = s:dark_grey
 let s:insert_color  = s:white
 let s:replace_color = s:yellow
 let s:visual_color  = s:cyan
-let s:active_bg     = s:black
-let s:inactive_bg   = s:black
+let s:active_bg     = s:blank
+let s:inactive_bg   = s:blank
 
 let s:p = {'normal': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'inactive': {}, 'tabline': {}}
 
 let s:p.normal.left     = [ [ s:black, s:tab_color ], [ s:white, s:active_bg, s:bold ] ]
 let s:p.normal.right    = [ [ s:white, s:active_bg, s:bold ], [ s:cyan, s:active_bg, s:bold ], [ s:red, s:active_bg, s:bold ] ]
-let s:p.normal.middle   = [ [ s:magenta, s:active_bg, s:bold ] ]
+let s:p.normal.middle   = [ [ s:magenta, s:blank, s:bold ] ]
 
 let s:p.insert.left     = [ [ s:black, s:insert_color ], [ s:white, s:active_bg, s:bold ] ]
 let s:p.insert.right    = [ [ s:white, s:active_bg, s:bold ], [ s:cyan, s:active_bg, s:bold ], [ s:red, s:active_bg, s:bold ] ]
