@@ -22,7 +22,7 @@ let s:colors = {
       \ "visual_black": get(s:overrides, "visual_black", { "gui": "NONE", "cterm": "NONE", "cterm16": "0" }),
       \ "comment_grey": get(s:overrides, "comment_grey", { "gui": "#7f7f7f", "cterm": "8", "cterm16": "8" }),
       \ "gutter_fg_grey": get(s:overrides, "gutter_fg_grey", { "gui": "#7f7f7f", "cterm": "8", "cterm16": "8" }),
-      \ "cursor_grey": get(s:overrides, "cursor_grey", { "gui": "#f7f7f7", "cterm": "8", "cterm16": "8" }),
+      \ "cursor_grey": get(s:overrides, "cursor_grey", { "gui": "#7f7f7f", "cterm": "8", "cterm16": "8" }),
       \ "cursor_line_grey": get(s:overrides, "cursor_line_grey", { "gui": "NONE", "cterm": "NONE", "cterm16": "NONE" }),
       \ "visual_grey": get(s:overrides, "visual_grey", { "gui": "#e5e5e5", "cterm": "7", "cterm16": "7" }),
       \ "menu_grey": get(s:overrides, "menu_grey", { "gui": "#7f7f7f", "cterm": "8", "cterm16": "8" }),
