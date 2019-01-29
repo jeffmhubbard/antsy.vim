@@ -187,6 +187,12 @@ call s:h("VisualNOS", { "bg": s:visual_grey }) " Visual mode selection when vim 
 call s:h("WarningMsg", { "fg": s:yellow }) " warning messages
 call s:h("WildMenu", { "fg": s:blue, "bg": s:black }) " current match in 'wildmenu' completion
 
+" incsearch.vim
+call s:h("IncSearchMatch", { "fg": s:blue, "bg": s:yellow }) " warning messages
+call s:h("IncSearchMatchReverse", { "fg": s:dark_blue, "bg": s:dark_yellow }) " warning messages
+call s:h("IncSearchOnCursor", { "fg": s:yellow, "bg": s:comment_grey }) " warning messages
+call s:h("IncSearchCursor", { "fg": s:black, "bg": s:cyan }) " warning messages
+
 " }}}
 
 " Language-Specific Highlighting {{{
