@@ -57,8 +57,8 @@ let s:p.inactive.left   = [ [ s:dark_grey, s:inactive_bg ] ]
 let s:p.inactive.right  = [ [ s:dark_grey, s:inactive_bg ], [ s:dark_grey, s:inactive_bg ], [ s:dark_grey, s:inactive_bg ], [ s:dark_grey, s:inactive_bg ] ]
 let s:p.inactive.middle = [ [ s:dark_grey, s:inactive_bg ] ]
 
-let s:p.normal.error    = [ [ s:black, s:red ] ]
-let s:p.normal.warning  = [ [ s:black, s:yellow ] ]
+let s:p.normal.error    = [ [ s:red, s:active_bg ] ]
+let s:p.normal.warning  = [ [ s:yellow, s:active_bg ] ]
 
 let g:lightline#colorscheme#antsy#palette = lightline#colorscheme#flatten(s:p)
 
