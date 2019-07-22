@@ -1,4 +1,3 @@
-" autoload/lightline/colorscheme/antsy.vim
 
 let s:bold = get(g:, 'lightline#antsy#disable_bold_style', 0) ? '' : 'bold'
 
@@ -38,7 +37,7 @@ let s:inactive_bg   = s:transparent
 let s:p = {'normal': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'inactive': {}}
 
 let s:p.normal.left     = [ [ s:black, s:normal_color ], [ s:white, s:active_bg, s:bold ] ]
-let s:p.normal.right    = [ [ s:white, s:active_bg, s:bold ], [ s:cyan, s:active_bg, s:bold ], [ s:magenta, s:active_bg, s:bold ], [ s:red, s:active_bg, s:bold ] ]
+let s:p.normal.right    = [ [ s:white, s:active_bg ], [ s:cyan, s:active_bg, s:bold ], [ s:magenta, s:active_bg, s:bold ], [ s:red, s:active_bg, s:bold ] ]
 let s:p.normal.middle   = [ [ s:special_grey, s:active_bg, s:bold ] ]
 
 let s:p.insert.left     = [ [ s:black, s:insert_color ], [ s:white, s:active_bg, s:bold ] ]
