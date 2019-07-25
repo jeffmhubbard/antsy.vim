@@ -175,5 +175,8 @@ call <sid>hi('IncSearchCursor', s:cyan, s:black, 'reverse')
 call <sid>hi('ALEErrorSign', s:red, s:none, 'none')
 call <sid>hi('ALEWarningSign', s:yellow, s:none, 'none')
 
+" scrooloose/nerdtree
+hi def link NERDTreeFlags Directory
+
 set background=dark
 
