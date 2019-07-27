@@ -2,15 +2,18 @@
 
 ![antsy](antsy.png)
 
-Vim syntax and color scheme.
-
-Requires NERDTree, BufTabLine, lightline.vim, & vim-devicons.
+A Vim colorscheme
 
 ### Install
-Run
+
+Clone repository
+```
+git clone https://github.com/jeffmhubbard/antsy.vim ~/.vim/bundles/antsy.vim
+```
+
+Or to install Pathogen, antsy.vim, and all my favorite plugins.
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/jeffmhubbard/dotfiles/master/extras/vim_setup.sh)"
 ```
-to install Pathogen, antsy.vim, and other needed plugins.
 
 Grab my [vimrc](https://raw.githubusercontent.com/jeffmhubbard/dotfiles/master/src/.vim/vimrc) too.
