@@ -1,3 +1,8 @@
+" ==========================
+" antsy.vim
+" A Vim colorscheme
+" ==========================
+
 scriptencoding utf-8
 
 hi clear
@@ -8,41 +13,45 @@ endif
 
 let g:colors_name="antsy"
 
+
 " ==========================
 " Highlighting Function
 " ==========================
+
 fun! <sid>hi(group, fg, bg, attr)
   if !empty(a:fg)
-    exec "hi " . a:group . " guifg=" . a:fg.gui . " ctermfg=" .  a:fg.cterm256
+    exec "hi " . a:group . " guifg=" . a:fg.gui . " ctermfg=" .  a:fg.cterm16
   endif
   if !empty(a:bg)
-    exec "hi " . a:group . " guibg=" . a:bg.gui . " ctermbg=" .  a:bg.cterm256
+    exec "hi " . a:group . " guibg=" . a:bg.gui . " ctermbg=" .  a:bg.cterm16
   endif
   if a:attr != ""
     exec "hi " . a:group . " gui=" . a:attr . " cterm=" . a:attr
   endif
 endfun
 
+
 " ==========================
 " Color Variables
 " ==========================
-let s:black = { "gui": "#000000", "cterm16": "0", "cterm256": "0" }
-let s:dark_red = { "gui": "#c23621", "cterm16": "1", "cterm256": "1" }
-let s:dark_green = { "gui": "#25bc24", "cterm16": "2", "cterm256": "2" }
-let s:dark_yellow = { "gui": "#adad27", "cterm16": "3", "cterm256": "3" }
-let s:dark_blue = { "gui": "#492ee1", "cterm16": "4", "cterm256": "4" }
-let s:dark_magenta = { "gui": "#d338d3", "cterm16": "5", "cterm256": "5" }
-let s:dark_cyan = { "gui": "#33bbc8", "cterm16": "6", "cterm256": "6" }
-let s:grey = { "gui": "#cbcccd", "cterm16": "7", "cterm256": "7" }
-let s:dark_grey = { "gui": "#818383", "cterm16": "8", "cterm256": "8" }
-let s:red = { "gui": "#fc391f", "cterm16": "9", "cterm256": "9" }
-let s:green = { "gui": "#31e722", "cterm16": "10", "cterm256": "10" }
-let s:yellow = { "gui": "#eaec23", "cterm16": "11", "cterm256": "11" }
-let s:blue = { "gui": "#5833ff", "cterm16": "12", "cterm256": "12" }
-let s:magenta = { "gui": "#f935f8", "cterm16": "13", "cterm256": "13" }
-let s:cyan = { "gui": "#f935f8", "cterm16": "14", "cterm256": "14" }
-let s:white = { "gui": "#33bbc8", "cterm16": "15", "cterm256": "15" }
-let s:none = {'gui': 'NONE', 'cterm16': 'NONE', 'cterm256': 'NONE'}
+
+let s:black = { "gui": "#000000", "cterm16": "0" }
+let s:dark_red = { "gui": "#c23621", "cterm16": "1" }
+let s:dark_green = { "gui": "#25bc24", "cterm16": "2" }
+let s:dark_yellow = { "gui": "#adad27", "cterm16": "3" }
+let s:dark_blue = { "gui": "#492ee1", "cterm16": "4" }
+let s:dark_magenta = { "gui": "#d338d3", "cterm16": "5" }
+let s:dark_cyan = { "gui": "#33bbc8", "cterm16": "6" }
+let s:grey = { "gui": "#cbcccd", "cterm16": "7" }
+let s:dark_grey = { "gui": "#818383", "cterm16": "8" }
+let s:red = { "gui": "#fc391f", "cterm16": "9" }
+let s:green = { "gui": "#31e722", "cterm16": "10" }
+let s:yellow = { "gui": "#eaec23", "cterm16": "11" }
+let s:blue = { "gui": "#5833ff", "cterm16": "12" }
+let s:magenta = { "gui": "#f935f8", "cterm16": "13" }
+let s:cyan = { "gui": "#f935f8", "cterm16": "14" }
+let s:white = { "gui": "#33bbc8", "cterm16": "15" }
+let s:none = { "gui": 'NONE', 'cterm16': 'NONE' }
 
 " ==========================
 " Definitions
@@ -128,6 +137,11 @@ call <sid>hi('TypeDef', s:yellow, s:none, 'none')
 call <sid>hi('Underlined', s:none, s:none, 'underline')
 call <sid>hi('WarningMsg', s:red, s:none, 'bold')
 
+
+" ==========================
+" Plugins
+" ==========================
+
 " git
 call <sid>hi('gitcommitComment', s:dark_grey, s:none, 'none')
 call <sid>hi('gitcommitUnmerged', s:cyan, s:none, 'none')
@@ -151,25 +165,23 @@ hi link gitcommitDiscardedArrow gitcommitDiscardedFile
 hi link gitcommitSelectedArrow gitcommitSelectedFile
 hi link gitcommitUnmergedArrow gitcommitUnmergedFile
 
+
 " tpope/vim-fugitive
 call <sid>hi("diffAdded", s:green, s:none, 'none')
 call <sid>hi("diffRemoved", s:dark_red, s:none, 'none')
+
 
 " mhinz/vim-signify
 call <sid>hi('SignifySignAdd', s:green, s:none, 'none')
 call <sid>hi('SignifySignChange', s:yellow, s:none, 'none')
 call <sid>hi('SignifySignDelete', s:red, s:none, 'none')
 
+
 " airblade/vim-gitgutter
 hi link GitGutterAdd    SignifySignAdd
 hi link GitGutterChange SignifySignChange
 hi link GitGutterDelete SignifySignDelete
 
-" incsearch.vim
-call <sid>hi('IncSearchMatch', s:black, s:yellow, 'none')
-call <sid>hi('IncSearchMatchReverse', s:dark_grey, s:yellow, 'none')
-call <sid>hi('IncSearchOnCursor', s:dark_cyan, s:black, 'reverse')
-call <sid>hi('IncSearchCursor', s:cyan, s:black, 'reverse')
 
 " w0rp/ale
 call <sid>hi('ALEErrorSign', s:red, s:none, 'none')
@@ -178,5 +190,12 @@ call <sid>hi('ALEWarningSign', s:yellow, s:none, 'none')
 " scrooloose/nerdtree
 hi def link NERDTreeFlags Directory
 
+
+" ==========================
+" Misc
+" ==========================
+
 set background=dark
 
+
+" vim: set ft=vim:

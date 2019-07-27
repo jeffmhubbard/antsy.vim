@@ -1,3 +1,6 @@
+" ==========================
+" Colors
+" ==========================
 
 let s:bold = get(g:, 'lightline#antsy#disable_bold_style', 0) ? '' : 'bold'
 
@@ -19,6 +22,11 @@ let s:cyan          = [ '#14f0f0', 14 ]
 let s:white         = [ '#e9ebeb', 15 ]
 let s:transparent   = [ 'NONE', 'NONE' ]
 
+
+" ==========================
+" Aliases
+" ==========================
+
 let s:comment_grey  = s:dark_grey
 let s:gutter_grey   = s:dark_grey
 let s:cursor_grey   = s:dark_grey
@@ -33,6 +41,15 @@ let s:replace_color = s:yellow
 let s:visual_color  = s:cyan
 let s:active_bg     = s:transparent
 let s:inactive_bg   = s:transparent
+
+
+" ==========================
+" Statusbar
+" ==========================
+
+" left: mode, file
+" right: position, percent, filetype, branch, ale
+" middle:
 
 let s:p = {'normal': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'inactive': {}}
 
@@ -60,5 +77,6 @@ let s:p.normal.error    = [ [ s:red, s:active_bg ] ]
 let s:p.normal.warning  = [ [ s:yellow, s:active_bg ] ]
 
 let g:lightline#colorscheme#antsy#palette = lightline#colorscheme#flatten(s:p)
+
 
 " vim: set ft=vim:
