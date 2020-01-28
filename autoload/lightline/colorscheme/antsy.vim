@@ -35,10 +35,10 @@ let s:menu_grey     = s:dark_grey
 let s:special_grey  = s:grey
 let s:vertsplit     = s:dark_grey
 
-let s:normal_color  = s:blue
+let s:normal_color  = s:cyan
 let s:insert_color  = s:white
 let s:replace_color = s:yellow
-let s:visual_color  = s:cyan
+let s:visual_color  = s:grey
 let s:active_bg     = s:transparent
 let s:inactive_bg   = s:transparent
 
