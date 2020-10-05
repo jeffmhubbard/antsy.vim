@@ -54,19 +54,19 @@ let s:inactive_bg   = s:transparent
 let s:p = {'normal': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'inactive': {}}
 
 let s:p.normal.left     = [ [ s:black, s:normal_color ], [ s:white, s:active_bg, s:bold ] ]
-let s:p.normal.right    = [ [ s:white, s:active_bg ], [ s:cyan, s:active_bg, s:bold ], [ s:magenta, s:active_bg, s:bold ], [ s:red, s:active_bg, s:bold ] ]
+let s:p.normal.right    = [ [ s:cyan, s:active_bg ], [ s:white, s:active_bg, s:bold ], [ s:dark_grey, s:active_bg, s:bold ], [ s:magenta, s:active_bg, s:bold ] ]
 let s:p.normal.middle   = [ [ s:special_grey, s:active_bg, s:bold ] ]
 
 let s:p.insert.left     = [ [ s:black, s:insert_color ], [ s:white, s:active_bg, s:bold ] ]
-let s:p.insert.right    = [ [ s:white, s:active_bg, s:bold ], [ s:cyan, s:active_bg, s:bold ], [ s:magenta, s:active_bg, s:bold ], [ s:red, s:active_bg, s:bold ] ]
+let s:p.insert.right    = [ [ s:cyan, s:active_bg, s:bold ], [ s:white, s:active_bg, s:bold ], [ s:dark_grey, s:active_bg, s:bold ], [ s:magenta, s:active_bg, s:bold ] ]
 let s:p.insert.middle   = [ [ s:special_grey, s:active_bg, s:bold ] ]
 
 let s:p.replace.left    = [ [ s:black, s:replace_color ], [ s:white, s:active_bg, s:bold ] ]
-let s:p.replace.right   = [ [ s:white, s:active_bg, s:bold ], [ s:cyan, s:active_bg, s:bold ], [ s:magenta, s:active_bg, s:bold ], [ s:red, s:active_bg, s:bold ] ]
+let s:p.replace.right   = [ [ s:cyan, s:active_bg, s:bold ], [ s:white, s:active_bg, s:bold ], [ s:dark_grey, s:active_bg, s:bold ], [ s:magenta, s:active_bg, s:bold ] ]
 let s:p.replace.middle  = [ [ s:special_grey, s:active_bg, s:bold ] ]
 
 let s:p.visual.left     = [ [ s:black, s:visual_color ], [ s:white, s:active_bg, s:bold ] ]
-let s:p.visual.right    = [ [ s:white, s:active_bg, s:bold ], [ s:cyan, s:active_bg, s:bold ], [ s:magenta, s:active_bg, s:bold ], [ s:red, s:active_bg, s:bold ] ]
+let s:p.visual.right    = [ [ s:cyan, s:active_bg, s:bold ], [ s:white, s:active_bg, s:bold ], [ s:dark_grey, s:active_bg, s:bold ], [ s:magenta, s:active_bg, s:bold ] ]
 let s:p.visual.middle   = [ [ s:special_grey, s:active_bg, s:bold ] ]
 
 let s:p.inactive.left   = [ [ s:dark_grey, s:inactive_bg ] ]
