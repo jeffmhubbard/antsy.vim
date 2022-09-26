@@ -165,31 +165,7 @@ hi link gitcommitDiscardedArrow gitcommitDiscardedFile
 hi link gitcommitSelectedArrow gitcommitSelectedFile
 hi link gitcommitUnmergedArrow gitcommitUnmergedFile
 
-
-" tpope/vim-fugitive
-call <sid>hi("diffAdded", s:green, s:none, 'none')
-call <sid>hi("diffRemoved", s:dark_red, s:none, 'none')
-
-
-" mhinz/vim-signify
-call <sid>hi('SignifySignAdd', s:green, s:none, 'none')
-call <sid>hi('SignifySignChange', s:yellow, s:none, 'none')
-call <sid>hi('SignifySignDelete', s:red, s:none, 'none')
-
-
-" airblade/vim-gitgutter
-hi link GitGutterAdd    SignifySignAdd
-hi link GitGutterChange SignifySignChange
-hi link GitGutterDelete SignifySignDelete
-
-
-" w0rp/ale
-call <sid>hi('ALEErrorSign', s:red, s:none, 'none')
-call <sid>hi('ALEWarningSign', s:yellow, s:none, 'none')
-
-" scrooloose/nerdtree
-hi def link NERDTreeFlags Directory
-
+call <sid>hi('TelescopeBorder', s:yellow, s:none, 'none')
 
 " ==========================
 " Misc
