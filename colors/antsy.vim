@@ -168,7 +168,7 @@ hi link gitcommitUnmergedArrow gitcommitUnmergedFile
 call <sid>hi('TelescopeBorder', s:dark_grey, s:none, 'none')
 
 call <sid>hi('TelescopeNormal', s:black, s:white, 'none')
-call <sid>hi('TelescopeSelection', s:grey, s:none, 'none')
+call <sid>hi('TelescopeSelection', s:grey, s:red, 'none')
 
 "TelescopeSelection = { default = true, link = "Visual" }
 "TelescopeSelectionCaret = { default = true, link = "TelescopeSelection" }
