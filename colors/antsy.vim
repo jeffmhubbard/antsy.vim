@@ -165,7 +165,7 @@ hi link gitcommitDiscardedArrow gitcommitDiscardedFile
 hi link gitcommitSelectedArrow gitcommitSelectedFile
 hi link gitcommitUnmergedArrow gitcommitUnmergedFile
 
-call <sid>hi('TelescopeBorder', s:yellow, s:none, 'none')
+call <sid>hi('TelescopeBorder', s:dark_grey, s:none, 'none')
 
 " ==========================
 " Misc
