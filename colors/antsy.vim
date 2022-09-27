@@ -142,13 +142,13 @@ call <sid>hi('WarningMsg', s:red, s:none, 'bold')
 " Plugins
 " ==========================
 
-" git
-hi link gitcommitUnmergedArrow gitcommitUnmergedFile
-hi link TelescopeMatching IncSearch
-
+" Telescope
 call <sid>hi('TelescopeBorder', s:dark_grey, s:none, 'none')
-
 call <sid>hi('TelescopeTitle', s:grey, s:none, 'none')
+
+call <sid>hi('TelescopeMatching', s:cyan, s:grey, 'none')
+
+hi link TelescopeMatching IncSearch
 
 
 "TelescopeSelection = { default = true, link = "Visual" }
