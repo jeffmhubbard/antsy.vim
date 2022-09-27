@@ -143,32 +143,13 @@ call <sid>hi('WarningMsg', s:red, s:none, 'bold')
 " ==========================
 
 " git
-call <sid>hi('gitcommitComment', s:dark_grey, s:none, 'none')
-call <sid>hi('gitcommitUnmerged', s:cyan, s:none, 'none')
-call <sid>hi('gitcommitBranch', s:red, s:none, 'underline')
-call <sid>hi('gitcommitOnBranch', s:white, s:none, 'none')
-call <sid>hi('gitcommitDiscardedType', s:dark_red, s:none, 'none')
-call <sid>hi('gitcommitSelectedType', s:green, s:none, 'none')
-call <sid>hi('gitcommitHeader', s:white, s:none, 'none')
-call <sid>hi('gitcommitUntrackedFile', s:yellow, s:none, 'none')
-call <sid>hi('gitcommitDiscardedFile', s:dark_red, s:none, 'none')
-call <sid>hi('gitcommitSelectedFile', s:dark_green, s:none, 'none')
-call <sid>hi('gitcommitUnmergedFile', s:cyan, s:none, 'none')
-call <sid>hi('gitcommitFile', s:white, s:none, 'none')
-call <sid>hi('gitcommitSummary', s:white, s:none, 'none')
-call <sid>hi('gitcommitOverflow', s:red, s:none, 'none')
-hi link gitcommitNoBranch gitcommitBranch
-hi link gitcommitUntracked gitcommitComment
-hi link gitcommitDiscarded gitcommitComment
-hi link gitcommitSelected gitcommitComment
-hi link gitcommitDiscardedArrow gitcommitDiscardedFile
-hi link gitcommitSelectedArrow gitcommitSelectedFile
 hi link gitcommitUnmergedArrow gitcommitUnmergedFile
+hi link TelescopeMatching IncSearch
 
 call <sid>hi('TelescopeBorder', s:dark_grey, s:none, 'none')
-call <sid>hi('TelescopePromptBorder', s:grey, s:none, 'none')
 
 call <sid>hi('TelescopeTitle', s:grey, s:none, 'none')
+
 
 "TelescopeSelection = { default = true, link = "Visual" }
 "TelescopeSelectionCaret = { default = true, link = "TelescopeSelection" }
